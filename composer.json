@@ -1,5 +1,5 @@
 {
-    "name": "Axelfvm/laravelcarrinhocompras",
+    "name": "axelfvm/laravelcarrinhocompras",
     "description": "Laravel carrinho de compras",
     "type": "library",
     "require": {
