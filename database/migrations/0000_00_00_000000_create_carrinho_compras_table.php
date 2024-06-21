@@ -25,6 +25,6 @@ class CreateCarrinhoComprasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('shopping_cart');
+        Schema::drop('carrinho_compras');
     }
 }
