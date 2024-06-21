@@ -349,13 +349,13 @@ To save cart into the database so you can retrieve it later, the package needs t
 By default the package will use the default database connection and use a table named `shopping_cart`.
 If you want to change these options, you'll have to publish the `config` file.
 
-    php artisan vendor:publish --provider="Gloudemans\Shoppingcart\ShoppingcartServiceProvider" --tag="config"
+    php artisan vendor:publish --provider="Axelfvm\CarrinhoCompras\ShoppingcartServiceProvider" --tag="config"
 
 This will give you a `cart.php` config file in which you can make the changes.
 
 To make your life easy, the package also includes a ready to use `migration` which you can publish by running:
 
-    php artisan vendor:publish --provider="Gloudemans\Shoppingcart\ShoppingcartServiceProvider" --tag="migrations"
+    php artisan vendor:publish --provider="Axelfvm\CarrinhoCompras\ShoppingcartServiceProvider" --tag="migrations"
 
 This will place a `shopping_cart` table's migration file into `database/migrations` directory. Now all you have to do is run `php artisan migrate` to migrate your database.
 
@@ -455,12 +455,12 @@ Cart::addCost('somethingelse', 1.11);
 		<tr>
 			<td colspan="2">&nbsp;</td>
 			<td>Transaction cost</td>
-			<td><?php echo Cart::getCost(\Gloudemans\Shoppingcart\Cart::COST_TRANSACTION); ?></td>
+			<td><?php echo Cart::getCost(\Axelfvm\CarrinhoCompras\Cart::COST_TRANSACTION); ?></td>
 		</tr>
 		<tr>
 			<td colspan="2">&nbsp;</td>
 			<td>Transaction cost</td>
-			<td><?php echo Cart::getCost(\Gloudemans\Shoppingcart\Cart::COST_SHIPPING); ?></td>
+			<td><?php echo Cart::getCost(\Axelfvm\CarrinhoCompras\Cart::COST_SHIPPING); ?></td>
 		</tr>
 		<tr>
 			<td colspan="2">&nbsp;</td>

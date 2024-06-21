@@ -16,7 +16,7 @@ class ShoppingcartServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('cart', 'Gloudemans\Shoppingcart\Cart');
+        $this->app->bind('cart', 'Axelfvm\CarrinhoCompras\Cart');
 
         $config = __DIR__ . '/../config/cart.php';
         $this->mergeConfigFrom($config, 'cart');
@@ -29,12 +29,12 @@ class ShoppingcartServiceProvider extends ServiceProvider
             }
         });
 
-        if ( ! class_exists('CreateShoppingcartTable')) {
+        if ( ! class_exists('CreateCarrinhoComprasTable')) {
             // Publish the migration
             $timestamp = date('Y_m_d_His', time());
 
             $this->publishes([
-                __DIR__ . '/../database/migrations/0000_00_00_000000_create_shopping_cart_table.php' => database_path('migrations/'.$timestamp.'_create_shoppingcart_table.php'),
+                __DIR__ . '/../database/migrations/0000_00_00_000000_create_carrinho_compras_table.php' => database_path('migrations/'.$timestamp.'_create_carrinhocompras_table.php'),
             ], 'migrations');
         }
     }
