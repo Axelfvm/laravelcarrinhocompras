@@ -650,7 +650,7 @@ class Cart
      */
     private function getTableName()
     {
-        return 'shopping_cart';
+        return 'carrinho_compras';
     }
 
     /**
