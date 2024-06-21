@@ -21,22 +21,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Axelfvm\\Shoppingcart\\": "src/"
+            "Axelfvm\\CarrinhoCompras\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Axelfvm\\Tests\\Shoppingcart\\": "tests/"
+            "Axelfvm\\Tests\\CarrinhoCompras\\": "tests/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "Axelfvm\\Shoppingcart\\ShoppingcartServiceProvider"
+                "Axelfvm\\CarrinhoCompras\\ShoppingcartServiceProvider"
             ],
             "aliases": {
-                "Cart": "Axelfvm\\Shoppingcart\\Facades\\Cart"
+                "Cart": "Axelfvm\\CarrinhoCompras\\Facades\\Cart"
             }
         }
     }
