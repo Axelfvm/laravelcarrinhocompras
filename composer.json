@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Axelfvm\\CarrinhoCompras\\CarrinhoComprasServiceProvider"
+                "Axelfvm\\CarrinhoCompras\\ShoppingcartServiceProvider"
             ],
             "aliases": {
                 "Cart": "Axelfvm\\CarrinhoCompras\\Facades\\Cart"
