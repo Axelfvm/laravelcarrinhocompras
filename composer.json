@@ -1,0 +1,43 @@
+{
+    "name": "axelfvm/laravelcarrinhocompras",
+    "description": "Laravel Carrinho de Compras",
+    "keywords": ["laravel", "carrinhocompras"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Axel Foley",
+            "email": "axelfvm@live.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/session": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/events": "^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5|^10.1",
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Axelfvm\\CarrinhoCompras\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Axelfvm\\Tests\\CarrinhoCompras\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Axelfvm\\CarrinhoCompras\\CarrinhoComprasServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Axelfvm\\CarrinhoCompras\\Facades\\Carrinho"
+            }
+        }
+    }
+}
