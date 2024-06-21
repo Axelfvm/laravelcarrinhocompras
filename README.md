@@ -8,7 +8,7 @@ Install the package through [Composer](http://getcomposer.org/).
 
 Run the Composer require command from the Terminal:
 
-    composer require mindscms/laravelshoppingcart
+    composer require axelfvm/laravelcarrinhocompras
 
 ### Laravel <= 7.0
 
@@ -16,11 +16,11 @@ Should you still be on version 7.0 of Laravel, the final steps for you are to ad
 
 Add a new line to the `providers` array:
 
-	Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class
+	Axelfvm\CarrinhoCompras\ShoppingcartServiceProvider::class
 
 And optionally add a new line to the `aliases` array:
 
-	'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
+	'Cart' => Axelfvm\CarrinhoCompras\Facades\Cart::class,
 
 Now you're ready to start using the shopping cart in your application.
 
