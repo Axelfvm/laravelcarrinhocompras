@@ -36,7 +36,7 @@
                 "Axelfvm\\CarrinhoCompras\\CarrinhoComprasServiceProvider"
             ],
             "aliases": {
-                "Cart": "Axelfvm\\CarrinhoCompras\\Facades\\Carrinho"
+                "Cart": "Axelfvm\\CarrinhoCompras\\Facades\\Cart"
             }
         }
     }
