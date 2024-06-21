@@ -1,30 +1,43 @@
 {
     "name": "axelfvm/laravelcarrinhocompras",
-    "description": "Laravel carrinho de compras",
-    "type": "library",
+    "description": "Carrinho Compras Laravel",
+    "keywords": ["laravel", "carrinhocompras"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Axel Foley",
+            "email": "axelfvm@live.com"
+        }
+    ],
     "require": {
-        "php": "^7.2.5",
-        "illuminate/support": "^6.0|^7.0|^8.0"
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/session": "^7.0|^8.0|^9.0|^10.0",
+        "illuminate/events": "^7.0|^8.0|^9.0|^10.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0|^5.0|^6.0",
-        "phpunit/phpunit": "^8.0|^9.0"
+        "phpunit/phpunit": "^9.5|^10.1",
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^7"
     },
     "autoload": {
         "psr-4": {
-            "Axelfvm\\LaravelCarrinhoCompras\\": "src/"
+            "Axelfvm\\Shoppingcart\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Axelfvm\\LaravelCarrinhoCompras\\ShoppingcartServiceProvider"
-            ],
-            "aliases": {
-                "Cart": "Axelfvm\\LaravelCarrinhoCompras\\Facades\\Cart"
-            }
+    "autoload-dev": {
+        "psr-4": {
+            "Axelfvm\\Tests\\Shoppingcart\\": "tests/"
         }
     },
     "minimum-stability": "stable",
-    "license": "MIT"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Axelfvm\\Shoppingcart\\ShoppingcartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Axelfvm\\Shoppingcart\\Facades\\Cart"
+            }
+        }
+    }
 }
