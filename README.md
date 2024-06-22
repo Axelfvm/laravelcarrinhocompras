@@ -346,7 +346,7 @@ foreach(Cart::content() as $row) {
 
 ### Configuration
 To save cart into the database so you can retrieve it later, the package needs to know which database connection to use and what the name of the table is.
-By default the package will use the default database connection and use a table named `shopping_cart`.
+By default the package will use the default database connection and use a table named `carrinho_compras`.
 If you want to change these options, you'll have to publish the `config` file.
 
     php artisan vendor:publish --provider="Axelfvm\CarrinhoCompras\ShoppingcartServiceProvider" --tag="config"
@@ -357,7 +357,7 @@ To make your life easy, the package also includes a ready to use `migration` whi
 
     php artisan vendor:publish --provider="Axelfvm\CarrinhoCompras\ShoppingcartServiceProvider" --tag="migrations"
 
-This will place a `shopping_cart` table's migration file into `database/migrations` directory. Now all you have to do is run `php artisan migrate` to migrate your database.
+This will place a `carrinho_compras` table's migration file into `database/migrations` directory. Now all you have to do is run `php artisan migrate` to migrate your database.
 
 ### Storing the cart
 To store your cart instance into the database, you have to call the `store($identifier) ` method. Where `$identifier` is a random key, for instance the id or username of the user.
