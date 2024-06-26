@@ -18,8 +18,8 @@ class ShoppingcartServiceProvider extends ServiceProvider
     {
         $this->app->bind('cart', 'Axelfvm\CarrinhoCompras\Cart');
 
-        $config = __DIR__ . '/../config/cart.php';
-        $this->mergeConfigFrom($config, 'cart');
+        //$config = __DIR__ . '/../config/cart.php';
+        //$this->mergeConfigFrom($config, 'cart');
 
         $this->publishes([__DIR__ . '/../config/cart.php' => config_path('cart.php')], 'config');
 
